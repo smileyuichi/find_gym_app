@@ -1,0 +1,564 @@
+.home-main .home-wrapper {
+  margin: 0 auto;
+}
+
+.home-header {
+  width: 100%;
+  height: 600px;
+  background-image: image-url("./furugi-top.jpeg");
+  background-size: cover;
+}
+
+.home-header .home-header-content {
+  margin: 0 auto;
+  padding: 0 64px 0;
+}
+
+.home-header .home-header-top {
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+}
+
+.home-header .home-header-top .top-app-icon-box {
+  padding-top: 12px;
+}
+
+.home-header .home-header-top .top-app-icon-box #top-icon {
+  height: 68px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.home-header .home-header-top .menu .menu-list {
+  justify-content: flex-end;
+  height: 60px;
+  line-height: 60px;
+}
+
+.home-header .home-header-top .menu .menu-list .menu-option {
+  height: 100%;
+  margin: 10px;
+}
+
+.home-header .home-header-top .menu .menu-list .user-nav {
+  position: relative;
+  top: 5px;
+  height: 60px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.home-header .home-header-top .menu .menu-list .user-nav .user-nav-icon {
+  margin-right: 4px;
+  width: 54px;
+  height: 54px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6px;
+  background-color: white;
+}
+
+.home-header .home-header-top .menu .menu-list .user-nav .user-nav-popup {
+  display: none;
+  position: absolute;
+  top: 56px;
+  width: 128px;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.home-header .home-header-top .menu .menu-list .user-nav .user-nav-popup .user-nav-option {
+  display: flex;
+  height: 40px;
+  line-height: 40px;
+  background-color: gray;
+  text-align: left;
+}
+
+.home-header .home-header-top .menu .menu-list .user-nav .user-nav-popup .user-nav-option .option-link {
+  width: 100%;
+  height: 100%;
+  padding-left: 16px;
+  text-align: center;
+}
+
+.home-header .home-header-top .menu .menu-list .user-nav .user-nav-popup .user-nav-option .option-link .option-link-name {
+  margin-left: 4px;
+}
+
+.home-header .top-message-box {
+  width: 500px;
+  height: 300px;
+  margin: 48px 0px 48px 128px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  font-size: 70px;
+  text-align: center;
+}
+
+.home-header .top-message-box h1 {
+  line-height: 104px;
+}
+
+.home-header .search-form {
+  justify-content: space-between;
+  max-width: 1472px;
+  min-width: 960px;
+  width: 100%;
+  height: 96px;
+  margin: 0 auto;
+  padding: 0 40px 0;
+  background-color: white;
+  font-size: 0;
+}
+
+.home-header .search-form .form-explanation {
+  width: 216px;
+  margin-right: 24px;
+}
+
+.home-header .search-form .search-box {
+  position: relative;
+  width: calc(100% - 240px);
+  height: 56px;
+  border-radius: 6px;
+}
+
+.home-header .search-form .search-box .left-content {
+  border-radius: 6px 0 0 6px;
+}
+
+.home-header .search-form .search-box__content {
+  width: calc((100% - 240px)/2);
+  height: 54px;
+  padding: 0 8px;
+  border: none;
+  outline: none;
+}
+
+.home-header .search-form .search-box__content:focus {
+  border-bottom: solid 3px gray;
+}
+
+.home-header .search-form .search-box .right-content {
+  width: 120px;
+}
+
+.home-header .search-form .search-box__submit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 120px;
+  height: 54px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  outline: none;
+  background-color: gray;
+  color: white;
+}
+
+.home-header .search-form .search-box__submit:focus {
+  outline: solid 4px lightgray;
+}
+
+.home-header .search-form .search-box__submit:hover {
+  cursor: pointer;
+}
+
+.home-header #search-result {
+  display: none;
+  position: relative;
+  z-index: 2;
+  margin: -20px 0 0 0;
+  box-shadow: 2px 2px 2px lightgray;
+  background-color: white;
+}
+
+.home-header #search-result .candidate-list {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.home-header #search-result .candidate-list .candidate {
+  display: inline;
+  margin: 4px 8px;
+  padding: 8px 16px;
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
+.home-header #search-result .candidate-list .candidate:hover {
+  opacity: 0.5;
+}
+
+.home-header #search-result .candidate-list .no-result {
+  margin: 4px 8px;
+  padding: 8px 16px;
+  background-color: whitesmoke;
+}
+
+.top-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 24px 64px;
+}
+
+.top-wrapper .top-main {
+  min-width: 800px;
+  width: 960px;
+  padding: 32px;
+}
+
+.top-wrapper .top-main h2 {
+  font-weight: bold;
+}
+
+.top-wrapper .top-main .search-area__area {
+  margin-top: 16px;
+  padding: 12px 24px;
+  border-radius: 4px;
+}
+
+.top-wrapper .top-main .search-area__area .selected-area {
+  padding: 8px;
+}
+
+.top-wrapper .top-main .search-area__area .selected-area__name {
+  margin-right: 24px;
+  font-weight: bold;
+}
+
+.top-wrapper .top-main .search-area__area .top-areas {
+  display: flex;
+}
+
+.top-wrapper .top-main .search-area__area .top-areas .top-area .top-area-link {
+  height: 48px;
+  margin: 4px;
+  padding: 0 16px 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.top-wrapper .top-main .search-area__area .top-areas .top-area .top-area-link .top-area-box .top-area-name {
+  font-weight: bold;
+}
+
+.top-wrapper .top-main .search-area__area .area-list {
+  padding: 20px 8px 4px 8px;
+  width: 100%;
+}
+
+.top-wrapper .top-main .search-area__area .area-list .all-area {
+  float: left;
+  position: relative;
+  width: 25%;
+  height: 28px;
+  padding-left: 12px;
+  cursor: pointer;
+}
+
+.top-wrapper .top-main .search-area__area .area-list .all-area:before {
+  position: absolute;
+  top: 0.35em;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-width: 4px;
+  border-style: solid;
+  border-color: transparent transparent transparent orange;
+  content: "";
+}
+
+.top-wrapper .top-main .search-genre__title {
+  margin-top: 48px;
+}
+
+.top-wrapper .top-main .search-genre__area .top-genres {
+  display: flex;
+}
+
+.top-wrapper .top-main .search-genre__area .top-genres .top-genre a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.top-wrapper .top-main .search-genre__area .top-genres .top-genre a:hover img {
+  opacity: 0.5;
+}
+
+.top-wrapper .top-main .search-genre__area .top-genres .top-genre .top-genre-link {
+  position: relative;
+  display: block;
+  width: 136px;
+  margin: 8px 8px 8px 0;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+
+.top-wrapper .top-main .search-genre__area .top-genres .top-genre__img {
+  height: 136px;
+  width: 136px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.top-wrapper .top-main .search-genre__area .top-genres .top-genre__name {
+  position: absolute;
+  bottom: 32px;
+  width: 100%;
+}
+
+.top-wrapper .top-main .search-genre__area .top-genres .top-genre__store-count {
+  position: absolute;
+  bottom: 16px;
+  width: 100%;
+}
+
+.top-wrapper .top-main .search-genre__area .genre-list {
+  display: flex;
+}
+
+.top-wrapper .top-main .search-genre__area .genre-list .all-genre .genre-link {
+  float: left;
+  padding: 6px 16px;
+  margin: 4px 8px 4px 0;
+  border-radius: 4px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.top-wrapper .top-main .search-brand__title {
+  margin-top: 48px;
+}
+
+.top-wrapper .top-side {
+  min-width: 360px;
+  width: 400px;
+  padding: 0 48px 0;
+}
+
+.top-wrapper .top-side .data-count-container {
+  display: flex;
+  padding: 24px 0;
+}
+
+.top-wrapper .top-side .data-count-container .data-counts {
+  display: flex;
+  margin: 0 auto;
+}
+
+.top-wrapper .top-side .data-count-container .data-counts .data-count {
+  padding: 0 24px;
+  color: #383838;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.top-wrapper .top-side .data-count-container .data-counts .data-count__unit {
+  text-align: center;
+}
+
+.top-wrapper .top-side .user-info-container {
+  width: 100%;
+  padding: 16px;
+  background-color: oldlace;
+}
+
+.top-wrapper .top-side .user-info-container .top-container {
+  padding: 16px;
+  background-color: white;
+}
+
+.top-wrapper .top-side .user-info-container .top-container .explain-login {
+  margin: 8px 0;
+  color: gray;
+}
+
+.top-wrapper .top-side .user-info-container .top-container .sign-up-box {
+  height: 40px;
+  margin: 12px;
+  padding: 1em 2em;
+  text-align: center;
+}
+
+.top-wrapper .top-side .user-info-container .top-container .sign-up-box .link-btn {
+  padding: 1em 2em;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  color: #FFF;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.top-wrapper .top-side .user-info-container .top-container .user-top-info {
+  width: 100%;
+}
+
+.top-wrapper .top-side .user-info-container .top-container .user-top-info .user-link:hover {
+  color: orange;
+}
+
+.top-wrapper .top-side .user-info-container .top-container .user-top-info .user-link:hover span {
+  color: orange;
+}
+
+.top-wrapper .top-side .user-info-container .top-container .user-top-info__user-icon {
+  width: 70px;
+  height: 70px;
+  padding: 2px;
+  border-radius: 6px;
+  background-color: white;
+}
+
+.top-wrapper .top-side .user-info-container .top-container .user-top-info__user-icon .user-icon-img {
+  width: 64px;
+  height: 64px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 0px;
+  border-radius: 6px;
+}
+
+.top-wrapper .top-side .user-info-container .top-container .user-top-info__user-name {
+  margin-left: 20px;
+  color: black;
+}
+
+.top-wrapper .top-side .user-info-container .top-container .user-action-data {
+  padding: 24px 8px 0 8px;
+}
+
+.top-wrapper .top-side .user-info-container .top-container .user-action-data .act-data {
+  display: flex;
+  justify-content: space-between;
+  line-height: 48px;
+  padding-right: 16px;
+  border-top: dotted 1px lightgray;
+  color: gray;
+}
+
+.top-wrapper .top-side .user-info-container .user-bookmark-store {
+  margin-top: 16px;
+  padding: 16px;
+  background-color: white;
+}
+
+.top-wrapper .top-side .user-info-container .user-bookmark-store .bookmark-stores {
+  padding: 16px 0;
+}
+
+.top-wrapper .top-side .user-info-container .user-bookmark-store .bookmark-stores .bookmark-store {
+  padding: 4px 0;
+}
+
+.top-wrapper .top-side .user-info-container .user-bookmark-store .bookmark-stores .bookmark-store a:hover {
+  text-decoration: none;
+}
+
+.top-wrapper .top-side .user-info-container .user-bookmark-store .bookmark-stores .bookmark-store a:hover .on-dec {
+  color: orange;
+  text-decoration: underline;
+}
+
+.top-wrapper .top-side .user-info-container .user-bookmark-store .bookmark-stores .bookmark-store .clip-shop-link .clip-shop-img {
+  width: 64px;
+  height: 64px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.top-wrapper .top-side .user-info-container .user-bookmark-store .bookmark-stores .bookmark-store .clip-shop-link .clip-shop-data {
+  margin-left: 16px;
+}
+
+.top-wrapper .top-side .user-info-container .user-bookmark-store .bookmark-stores .bookmark-store .clip-shop-link .clip-shop-data__tag {
+  color: gray;
+  font-size: 10px;
+}
+
+.top-wrapper .top-side .user-info-container .user-bookmark-store .bookmark-stores .bookmark-store .clip-shop-link .clip-shop-data__rate {
+  line-height: 14px;
+  font-weight: bold;
+}
+
+.top-wrapper .top-side .user-info-container .user-bookmark-store .bookmark-stores .bookmark-store .clip-shop-link .clip-shop-data__rate .star-rating {
+  vertical-align: bottom;
+  font-size: 2px;
+}
+
+.top-wrapper .top-side .user-info-container .user-bookmark-store .user-boookmark-list {
+  text-align: right;
+}
+
+.top-wrapper .top-side .user-info-container .user-bookmark-store .user-boookmark-list .bookmark-list-link {
+  padding-left: 8px;
+  cursor: pointer;
+}
+
+.top-wrapper .top-side .user-info-container .user-bookmark-store .user-boookmark-list .bookmark-list-link:before {
+  display: inline-block;
+  top: 0.35em;
+  width: 0;
+  height: 0;
+  border-width: 4px;
+  border-style: solid;
+  border-color: transparent transparent transparent orange;
+  content: "";
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.top-brands {
+  display: flex;
+}
+
+.top-brands .top-brand {
+  position: relative;
+  width: 136px;
+  margin: 8px 8px 8px 0;
+  cursor: pointer;
+}
+
+.top-brands .top-brand__img {
+  height: 136px;
+  width: 136px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.top-brands .top-brand__img:hover {
+  opacity: 0.5;
+}
+
+.brand-list {
+  width: 100%;
+}
+
+.brand-list .all-brand .brand-link {
+  float: left;
+  margin: 4px 8px 4px 0;
+  padding: 6px 16px;
+  border-radius: 4px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
