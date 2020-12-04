@@ -15,13 +15,13 @@
             </div>
             <div class="sitemap">
                 <div class="sitemap__link first-link">
-                    <link rel="stylesheet" href="">プライバシーポリシー
+                    <a href="../privacy">プライバシーポリシー</a>
                 </div>
                 <div class="sitemap__link">
-                    <link rel="stylesheet" href="">お問い合わせ
+                    <a href="mailto:engineer.ytanaka.1013@gmail.com">お問い合わせ</a>
                 </div>
                 <div class="sitemap__link">
-                    <link rel="stylesheet" href="https://twitter.com/smileyuichi"><span>作者Twitter</span>
+                    <a href="https://twitter.com/smile_yuichi"><i class='fab fa-twitter'></i><span>作者Twitter</span></a>
                 </div>
             </div>
             <div class="copylight">

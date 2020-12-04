@@ -32,7 +32,7 @@
                         </div>
                     </div>
                     <div class="top-message-box">
-                        <h1>スポーツクラブ探しは「すぽじむ」</h1>
+                        <h1>スポーツジム探しは「すぽじむ」</h1>
                     </div>
                     <div class="search-form">
                         <div class="form-explanation">
