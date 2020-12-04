@@ -52,7 +52,7 @@
         <div class="top-container">
             <h2>新規会員登録</h2>
             <div class="explain-login"><span>ログインすると、古着navi上でお店を保存したり、行ったお店を管理できるようになります。</span></div>
-            <div class="sign-up-box"><link rel="stylesheet" href="">会員登録</div>
+            <div class="sign-up-box"><a href="" class="link-btn">会員登録</a></div>
         </div>
     </div>
 </div>

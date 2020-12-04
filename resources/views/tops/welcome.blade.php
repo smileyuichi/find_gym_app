@@ -15,7 +15,7 @@
                 <div class="home-header-content">
                     <div class="home-header-top">
                         <div class="top-app-icon-box">
-                            <image id="top-icon"></image>
+                            <img id="top-icon" src="/images/spogym-white-logo.png">
                         </div>
                         <div class="menu">
                             <ul class="menu-list">

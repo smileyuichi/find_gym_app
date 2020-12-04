@@ -1,3 +1,4 @@
+@import "./reset.scss";
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
@@ -7,8 +8,12 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+//変数の設定
 @import "./variable.scss";
+//mixin
 @import "./mixin.scss";
+//footerのscss
+@import "./modules/footer.scss";
 
 .home-main {
     .home-wrapper {
@@ -19,7 +24,7 @@
     width: 100%;
     min-width: $wrapper_min_width;
     height: 600px;
-    background-image: image-url("furugi-top.jpeg");
+    background-image: url(../../public/images/gym-top.jpg);
     background-size: cover;
     .home-header-content {
       max-width: $wrapper_max_width;
@@ -36,7 +41,7 @@
       .top-app-icon-box {
         padding-top: 12px;
         #top-icon {
-          height: 68px;
+          height: 140px;
           object-fit: cover;
         }  
       }

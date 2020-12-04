@@ -11,7 +11,7 @@
         </div>
         <div class="footer-wrap__bottom">
             <div class="servise-icon-box">
-                <img src="" alt="">
+                <img id="footer-icon" src="/images/spogym-black-logo.png" alt="">
             </div>
             <div class="sitemap">
                 <div class="sitemap__link first-link">
