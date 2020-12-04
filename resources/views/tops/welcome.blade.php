@@ -9,8 +9,8 @@
 </head>
 <body>
     <div class="home-main">
-        <div class="wrapper">
-            <div class="header">
+        <div class="home-wrapper">
+            <div class="home-header">
                 <div class="home-header-content">
                     <div class="home-header-top">
                         <div class="top-app-icon-box">
@@ -18,7 +18,15 @@
                         </div>
                         <div class="menu">
                             <ul class="menu-list">
-                                <li></li>
+                                <li class="menu-option">
+                                    <a href="">行ったスポーツジム</a>
+                                </li>
+                                <li class="menu-option">
+                                    <a href="">保存済み</a>
+                                </li>
+                                <li class="menu-option">
+                                    <a href="">ログイン</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -37,28 +45,12 @@
                 </div>
             </div>
             <div class="top-wrapper">
-
+                @include('tops.search_content')
+                @include('tops.side_bar')
             </div>
         </div>
     </div>
+    @include('shared.footer')
 </body>
 </html>
-            .home-header-top
-            .top-message-box
-              %h1 古着屋探しは「古コレ」
-            .search-form
-              .form-explanation
-                %h2 エリア・キーワードから探す
-              .search-box
-                = search_form_for(@q, url: shops_search_path) do |f|
-                  = f.text_field :area_name_cont, placeholder: 'エリア[例：下北沢]', autocomplete: :off, class: 'search-box__content left-content', id: 'area-search-field' 
-                  = f.text_field :name_or_outline_or_brands_name_or_genres_name_cont, placeholder: 'キーワード[例：yohji yamamoto]', autocomplete: :off, class: 'search-box__content center-content', id: 'keyword-field'
-                  = select_tag :rate_range, options_from_collection_for_select(RateRange.all, :id, :name), { prompt: "評価", class: 'search-box__content right-content', id: 'rate-field'}
-                  = f.submit '検 索', class: 'search-box__submit', id: 'search-submit-btn'
-            #search-result
-              .candidate-list
-        .top-wrapper
-          = render "tops/search_content"
-          = render "tops/side_bar"
 
-        = render 'shared/footer'
