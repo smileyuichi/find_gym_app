@@ -14,4 +14,4 @@ const mix = require('laravel-mix');
 mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css')
     .sass('resources/sass/style_privacy.scss','public/css')
-    .sourceMaps(true, 'inline-source-map');
+    .sourceMaps();

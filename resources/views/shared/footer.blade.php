@@ -3,10 +3,10 @@
         <div class="footer-wrap__top">
             <ul class="languege-list">
                 <li class="languege-title">言語：</li>
-                <li class="languege"><link rel="stylesheet" href="">English</li>
-                <li class="languege"><link rel="stylesheet" href="">简体中文</li>
-                <li class="languege"><link rel="stylesheet" href="">繁体中文</li>
-                <li class="languege"><link rel="stylesheet" href="">한국어</li>
+                <li class="languege"><a href="{{url('/readies')}}">English</a></li>
+                <li class="languege"><a href="{{url('/readies')}}">简体中文</a></li>
+                <li class="languege"><a href="{{url('/readies')}}">繁体中文</a></li>
+                <li class="languege"><a href="{{url('/readies')}}">한국어</a></li>
             </ul>
         </div>
         <div class="footer-wrap__bottom">
