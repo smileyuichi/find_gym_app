@@ -1,61 +1,48 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# スポーツジム検索
+関西のスポーツジムの情報を掲載し、口コミを誰でも簡単に投稿できるサイトです。
+URL追加
+## アプリ概要
+関西のスポーツジムを簡単に様々な角度から探せたり、店舗に対してユーザーのリアルな評価ができるアプリです。
+・関西にあるスポーツクラブを検索できる
+・設備やプログラムの口コミを点数付きで投稿する機能を実装
+・行ったお店、気になるお店をマイページで管理できる機能を実装
+Laravelで制作しました。
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+作成した背景や想いなど、より詳細な情報は下記をご覧ください。
+ポートフォリオ解説[qiitaに遷移]
 
-## About Laravel
+## 機能
+Laravelで制作したアプリです。
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+店舗検索機能(あいまい)　：店舗名やスタジオプログラムなど、入力したキーワードに合致する店舗をあいまい検索できます
+店舗検索機能(エリア/ジャンル/店舗設備)　：店舗があるエリア、店舗のジャンル、店舗設備を軸に店舗を検索できます
+SNSシェア機能　：店舗情報をFacebook、Twitter、LINEで簡単に共有できます
+マイページ機能　：行った店舗(口コミを投稿した店舗)、保存した店舗を一覧で確認できます
+口コミ投稿・評価機能　：店舗の評価を行えます
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 使い方
+### 店舗検索
+トップページの検索ボックスに任意の値を入力 or エリア・カテゴリ・設備を選択
+検索条件に該当する店舗をクリック
+### 口コミ投稿
+画面右上の「ログイン」ボタンをクリック
+テストユーザーで簡単ログイン（※アカウント登録せずに機能を試したい方は こちらをクリック）
+任意の店舗ページに移動→口コミページ→口コミを投稿するをクリック
+評価等を入力して投稿→点数が反映される
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## ローカル環境へのインストール方法
+$ git clone https://github.com/smileyuichi/find_gym_app.git
+$ cd find_gym_app
+さらに追加
 
-## Learning Laravel
+## ER図
+https://i.gyazo.com/e12095666ae64b232c81a7c66172d776.png
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## その他
+現在も開発を継続しており、順次実装予定です。
+実装予定の機能はIssuesよりご確認いただけます。
+https://github.com/smileyuichi/find_gym_app/issues
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 作者
+Twitter
+mail to: engineer.ytanaka.1013@gmail.com
