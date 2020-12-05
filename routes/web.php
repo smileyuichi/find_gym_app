@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('tops/welcome');
 });
+Route::get('/readies', function () {
+    return view('readies/index');
+});
 Route::get('/privacy', function () {
     return view('privacy');
 });
