@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\GymController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,3 +23,5 @@ Route::get('/readies', function () {
 Route::get('/privacy', function () {
     return view('privacy');
 });
+Route::get('/gyms',[GymController::class,'index']);
+Route::get('/gyms/show',[GymController::class,'show']);

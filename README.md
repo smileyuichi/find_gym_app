@@ -36,7 +36,7 @@ $ cd find_gym_app
 さらに追加
 
 ## ER図
-https://i.gyazo.com/e12095666ae64b232c81a7c66172d776.png
+https://i.gyazo.com/ff4720ebdb20b450030734d2e7261e8f.png
 
 ## その他
 現在も開発を継続しており、順次実装予定です。<br>
