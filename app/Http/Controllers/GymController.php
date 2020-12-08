@@ -15,7 +15,7 @@ class GymController extends Controller
             $param = ['id' => $request->id];
             $items = DB::select('select * from gyms where id = :id',$param);
         } else {
-            $items = DB::table("gyms")->get();
+            $items = DB::table("gyms")->paginate(5);
         }
         
         return view('gyms.index', ['items' => $items]);

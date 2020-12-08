@@ -2,7 +2,9 @@
 @section('main-content')
 パンくずリスト
 @include('gyms.searched_heading')
-ぺじネーション
+<div class="shop-paginate">    
+    {{$items->links()}}
+</div>
 <div class="shop-list">
     @foreach($items as $item)
     <div class="shop">
@@ -49,5 +51,8 @@
         </a>
     </div>
     @endforeach
+    <div class="shop-paginate">    
+        {{$items->links()}}
+    </div>
 </div>
 @endsection
