@@ -7,6 +7,7 @@
         @include('shared.header')
         <div class="main">
             <div class="wrapper">
+                
                 {{-- コンテンツを適宜当てはめる --}}
                 @section('main-content')
                 @show
