@@ -73,6 +73,46 @@ class GymTableSeeder extends Seeder
         ];
         DB::table('gyms')->insert($params);
 
+        $params = [
+            'name' => 'コナミスポーツ高槻店',
+            'outline' => '駅近徒歩5分',
+            'postal_code' => '032-2226',
+            'address' => '大阪府高槻市城北町3丁目',
+            'latitude' => 138.346322,
+            'longtitude' => 130.78653,
+        ];
+        DB::table('gyms')->insert($params);
+
+        $params = [
+            'name' => 'セントラル心斎橋店',
+            'outline' => '若者が集う',
+            'postal_code' => '238-0063',
+            'address' => '大阪府中区心斎橋2丁目',
+            'latitude' => 131.23521,
+            'longtitude' => 136.00984,
+        ];
+        DB::table('gyms')->insert($params);
+
+        $params = [
+            'name' => '東急オアシス茨木店',
+            'outline' => '24hに対応中',
+            'postal_code' => '567-0324',
+            'address' => '大阪府茨木市真砂1丁目',
+            'latitude' => 132.00098,
+            'longtitude' => 133.89876,
+        ];
+        DB::table('gyms')->insert($params);
+
+        $params = [
+            'name' => 'セントラル新大阪店',
+            'outline' => '仕事帰りのサラリーマンに人気',
+            'postal_code' => '551-8173',
+            'address' => '大阪府北区北淡路1丁目',
+            'latitude' => 133.9901,
+            'longtitude' => 136.8183459,
+        ];
+        DB::table('gyms')->insert($params);
+
 
     }
 }

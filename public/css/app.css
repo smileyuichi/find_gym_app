@@ -17556,6 +17556,10 @@ body .main .wrapper .ready-wrapper {
   font-size: 12px;
 }
 
+.shop-paginate nav {
+  margin: 20px 0;
+}
+
 .searched_heading-box {
   display: flex;
   align-items: center;
