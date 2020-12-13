@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Gym;
 
 use Illuminate\Support\Facades\DB;
 
@@ -21,10 +22,15 @@ class GymController extends Controller
         return view('gyms.index', ['items' => $items]);
     }
 
-    public function show(Request $request)
+    public function show($id)
     {
-        $name = $request->name;
-        $items = DB::table('gyms')->where('name','like','%' . $name . '%')->get();
-        return view('gyms.show',['items' => $items]);
+        // $param = ['id' => $gym->id];
+        // $item = DB::select('select * from gyms where id =:id',$param);
+        // if($item!=null)
+        // {
+            return view('gyms.show',['gym' => Gym::findOrFail($id)]);
+        // }else{
+        //     return redirect('/');
+        // }
     }
 }

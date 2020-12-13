@@ -45,16 +45,6 @@ class GymTableSeeder extends Seeder
 
     public function run()
     {
-        // $params = [
-        //     'name' => 'セントラル新大阪店',
-        //     'outline' => '仕事帰りのサラリーマンに人気',
-        //     'postal_code' => '551-8173',
-        //     'address' => '大阪府北区北淡路1丁目',
-        //     'latitude' => 133.9901,
-        //     'longtitude' => 136.8183459,
-        // ];
-        // DB::table('gyms')->insert($params);
-
         $this->call(GymsCsvSeeder::class);
     }
 }

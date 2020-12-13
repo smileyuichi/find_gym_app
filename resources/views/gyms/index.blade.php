@@ -8,7 +8,7 @@
 <div class="shop-list">
     @foreach($items as $item)
     <div class="shop">
-        <a href="/gyms/show?id={{$item->id}}">
+        <a href="/gyms/{{$item->id}}">
             <div class="top-info">
                 <div class="top-info__name_and_area">
                     <div class="top-info__name_and_area__name">{{$item->name}}</div>
