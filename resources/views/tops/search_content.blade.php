@@ -7,7 +7,7 @@
                     <span>大阪</span>
                 </div>
                 <div class="selected-area__store-count">
-                    <span>{{$count}}件</span>
+                    <span>{{$osaka_area}}件</span>
                 </div>
             </div>
             <ul class="top-areas">
@@ -15,7 +15,7 @@
                     <a href="" class="top-area-link">
                         <div class="top-area-box">
                             <span class="top-area-name">大阪市内</span>
-                            <span class="top-area-shop-count">件</span>
+                            <span class="top-area-shop-count">{{$osaka_city}}件</span>
                         </div>
                     </a>
                 </li>
@@ -23,7 +23,7 @@
                     <a href="" class="top-area-link">
                         <div class="top-area-box">
                             <span class="top-area-name">堺市内</span>
-                            <span class="top-area-shop-count">件</span>
+                            <span class="top-area-shop-count">{{$sakai_city}}件</span>
                         </div>
                     </a>
                 </li>
@@ -31,7 +31,7 @@
                     <a href="" class="top-area-link">
                         <div class="top-area-box">
                             <span class="top-area-name">大阪府内</span>
-                            <span class="top-area-shop-count">件</span>
+                            <span class="top-area-shop-count">{{$osaka_prefecture}}件</span>
                         </div>
                     </a>
                 </li>
