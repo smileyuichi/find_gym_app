@@ -66,35 +66,35 @@
                     <a href="" class="top-genre-link">
                         <img src="/images/top-genres/total-fitness.jpg" alt="" class="top-genre__img">
                         <div class="top-genre__name"><span>トータルフィットネス</span></div>
-                        <div class="top-genre__store-count"><span>件</span></div>
+                        <div class="top-genre__store-count"><span>{{$feature_total_fitness}}件</span></div>
                     </a>
                 </li>
                 <li class="top-genre">
                     <a href="" class="top-genre-link">
                         <img src="/images/top-genres/24-7.jpg" alt="" class="top-genre__img">
                         <div class="top-genre__name"><span>24時間営業</span></div>
-                        <div class="top-genre__store-count"><span>件</span></div>
+                        <div class="top-genre__store-count"><span>{{$feature_24h}}件</span></div>
                     </a>
                 </li>
                 <li class="top-genre">
                     <a href="" class="top-genre-link">
                         <img src="/images/top-genres/studio-program.jpg" alt="" class="top-genre__img">
                         <div class="top-genre__name"><span>スタジオプログラム</span></div>
-                        <div class="top-genre__store-count"><span>件</span></div>
+                        <div class="top-genre__store-count"><span>{{$feature_studio_program}}件</span></div>
                     </a>
                 </li>
                 <li class="top-genre">
                     <a href="" class="top-genre-link">
                         <img src="/images/top-genres/private-gym.jpg" alt="" class="top-genre__img">
                         <div class="top-genre__name"><span>プライベートジム</span></div>
-                        <div class="top-genre__store-count"><span>件</span></div>
+                        <div class="top-genre__store-count"><span>{{$feature_private_gym}}件</span></div>
                     </a>
                 </li>
                 <li class="top-genre">
                     <a href="" class="top-genre-link">
                         <img src="/images/top-genres/clinic.jpg" alt="" class="top-genre__img">
                         <div class="top-genre__name"><span>整骨院併設</span></div>
-                        <div class="top-genre__store-count"><span>件</span></div>
+                        <div class="top-genre__store-count"><span>{{$feature_establish_clinic}}件</span></div>
                     </a>
                 </li>
             </ul>
