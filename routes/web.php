@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GymController;
+use App\Http\Controllers\TopController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,14 +15,12 @@ use App\Http\Controllers\GymController;
 |
 */
 
-Route::get('/', function () {
-    return view('tops/welcome');
-});
+Route::get('/', [TopController::class,'index'])->name('tops/welcome');
 Route::get('/readies', function () {
     return view('readies/index');
 });
 Route::get('/privacy', function () {
     return view('privacy');
 });
+Route::get('/gyms/{id}',[GymController::class,'show']);
 Route::get('/gyms',[GymController::class,'index']);
-Route::get('/gyms/show',[GymController::class,'show']);

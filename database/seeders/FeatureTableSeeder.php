@@ -6,12 +6,12 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Flynsarmy\CsvSeeder\CsvSeeder;
 
-class GymsCsvSeeder extends CsvSeeder {
+class FeaturesCsvSeeder extends CsvSeeder {
 
 	public function __construct()
 	{
-		$this->table = 'gyms';
-		$this->filename = base_path().'/database/seedsTest/csvs/gyms_csv.csv';
+		$this->table = 'features';
+		$this->filename = base_path().'/database/seedsTest/csvs/features_csv.csv';
 	}
 
 	public function run()
@@ -26,25 +26,16 @@ class GymsCsvSeeder extends CsvSeeder {
 	}
 }
 
-
-class GymTableSeeder extends Seeder
+class FeatureTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      *
-     * $table->increments('id');
-     * $table->string('name');
-     * $table->text('outline');
-     * $table->string('postal_code');
-     * $table->string('address');
-     * $table->float('latitude');
-     * $table->float('longtitude');
-     * 
      * @return void
-     **/
-
+     */
     public function run()
     {
-        $this->call(GymsCsvSeeder::class);
+        //
+        $this->call(FeaturesCsvSeeder::class);
     }
 }

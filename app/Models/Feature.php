@@ -5,11 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Gym extends Model
+class Feature extends Model
 {
     use HasFactory;
-    public function features()
+    public function gyms()
     {
-        return $this->belongsToMany('App\Models\Feature')->withTimestamps();
+        return $this->belongsToMany('App\Models\Gym')->withTimestamps();
     }
 }
