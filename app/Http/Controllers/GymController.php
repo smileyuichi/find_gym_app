@@ -15,31 +15,37 @@ class GymController extends Controller
         if(isset($request->name))
         {
             $param = ['gym_name' => $request->name];
-            // ジムの名前で検索する
+            // ジムの名前で検索とヒット件数
             $items = DB::table('gyms')->where('name','like','%'. $param['gym_name'] . '%')->paginate(5);
+            $search_count = DB::table('gyms')->where('name','like','%'. $param['gym_name'] . '%')->count();
         }elseif(isset($request->feature))
         {
             $param = ['feature' => $request->feature];
-            // ジムの特徴で検索する
+            // ジムの特徴で検索とヒット件数
             $items = DB::table('gyms')->join('feature_gym','gyms.id','=','feature_gym.gym_id')->join('features','features.id','=','feature_gym.feature_id')->select('gyms.*','features.id')->where('features.name','like', '%'.$param['feature'].'%')->paginate(5);
-        
-        }else{
+            $search_count = DB::table('gyms')->join('feature_gym','gyms.id','=','feature_gym.gym_id')->join('features','features.id','=','feature_gym.feature_id')->select('gyms.*','features.id')->where('features.name','like', '%'.$param['feature'].'%')->count();
+        }elseif(isset($request->address))
+        {
+            $param = ['address'=> $request->address];
+            // ジムの住所で検索とヒット件数
+            $items = DB::table('gyms')->where('address','like','%'. $param['address'] . '%')->paginate(5);
+            $search_count = DB::table('gyms')->where('address','like','%'. $param['address'] . '%')->count();
+        }else
+        {
             var_dump('miss');
             $items = DB::table('gyms')->paginate(5);
+            $search_count = DB::table('gyms')->count();
         }
+        $val = [
+            'items' => $items,
+            'search_count' => $search_count,
+        ];
 
-        return view('gyms.index', ['items' => $items]);
+        return view('gyms.index', $val);
     }
 
     public function show($id)
     {
-        // $param = ['id' => $gym->id];
-        // $item = DB::select('select * from gyms where id =:id',$param);
-        // if($item!=null)
-        // {
             return view('gyms.show',['gym' => Gym::findOrFail($id)]);
-        // }else{
-        //     return redirect('/');
-        // }
     }
 }

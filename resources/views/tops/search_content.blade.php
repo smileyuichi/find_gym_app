@@ -12,7 +12,15 @@
             </div>
             <ul class="top-areas">
                 <li class="top-area">
-                    <a href="" class="top-area-link">
+                    <a href="/gyms?address=大阪府" class="top-area-link">
+                        <div class="top-area-box">
+                            <span class="top-area-name">大阪府すべて</span>
+                            <span class="top-area-shop-count">{{$osaka_area}}件</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="top-area">
+                    <a href="/gyms?address=大阪府大阪市" class="top-area-link">
                         <div class="top-area-box">
                             <span class="top-area-name">大阪市内</span>
                             <span class="top-area-shop-count">{{$osaka_city}}件</span>
@@ -20,18 +28,10 @@
                     </a>
                 </li>
                 <li class="top-area">
-                    <a href="" class="top-area-link">
+                    <a href="/gyms?address=大阪府堺市" class="top-area-link">
                         <div class="top-area-box">
                             <span class="top-area-name">堺市内</span>
                             <span class="top-area-shop-count">{{$sakai_city}}件</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="top-area">
-                    <a href="" class="top-area-link">
-                        <div class="top-area-box">
-                            <span class="top-area-name">大阪府内</span>
-                            <span class="top-area-shop-count">{{$osaka_prefecture}}件</span>
                         </div>
                     </a>
                 </li>
@@ -39,19 +39,19 @@
             </ul>
             <ul class="area-list clearfix">
                 <li class="all-area">
-                    <a href="" class="area-link"><span>大阪市北区</span></a>
+                    <a href="/gyms?address=大阪府大阪市北区" class="area-link"><span>大阪市北区</span></a>
                 </li>
                 <li class="all-area">
-                    <a href="" class="area-link"><span>大阪市中央区</span></a>
+                    <a href="/gyms?address=大阪府大阪市中央区" class="area-link"><span>大阪市中央区</span></a>
                 </li>
                 <li class="all-area">
-                    <a href="" class="area-link"><span>吹田市</span></a>
+                    <a href="/gyms?address=大阪府吹田市" class="area-link"><span>吹田市</span></a>
                 </li>
                 <li class="all-area">
-                    <a href="" class="area-link"><span>高槻市</span></a>
+                    <a href="/gyms?address=大阪府高槻市" class="area-link"><span>高槻市</span></a>
                 </li>
                 <li class="all-area">
-                    <a href="" class="area-link"><span>茨木市</span></a>
+                    <a href="/gyms?address=大阪府茨木市" class="area-link"><span>茨木市</span></a>
                 </li>
             </ul>
         </div>
@@ -63,35 +63,35 @@
         <div class="search-genre__area">
             <ul class="top-genres">
                 <li class="top-genre">
-                    <a href="" class="top-genre-link">
+                    <a href="/gyms?feature=トータルフィットネス" class="top-genre-link">
                         <img src="/images/top-genres/total-fitness.jpg" alt="" class="top-genre__img">
                         <div class="top-genre__name"><span>トータルフィットネス</span></div>
                         <div class="top-genre__store-count"><span>{{$feature_total_fitness}}件</span></div>
                     </a>
                 </li>
                 <li class="top-genre">
-                    <a href="" class="top-genre-link">
+                    <a href="/gyms?feature=24時間営業" class="top-genre-link">
                         <img src="/images/top-genres/24-7.jpg" alt="" class="top-genre__img">
                         <div class="top-genre__name"><span>24時間営業</span></div>
                         <div class="top-genre__store-count"><span>{{$feature_24h}}件</span></div>
                     </a>
                 </li>
                 <li class="top-genre">
-                    <a href="" class="top-genre-link">
+                    <a href="/gyms?feature=スタジオプログラム" class="top-genre-link">
                         <img src="/images/top-genres/studio-program.jpg" alt="" class="top-genre__img">
                         <div class="top-genre__name"><span>スタジオプログラム</span></div>
                         <div class="top-genre__store-count"><span>{{$feature_studio_program}}件</span></div>
                     </a>
                 </li>
                 <li class="top-genre">
-                    <a href="" class="top-genre-link">
+                    <a href="/gyms?feature=プライベートジム" class="top-genre-link">
                         <img src="/images/top-genres/private-gym.jpg" alt="" class="top-genre__img">
                         <div class="top-genre__name"><span>プライベートジム</span></div>
                         <div class="top-genre__store-count"><span>{{$feature_private_gym}}件</span></div>
                     </a>
                 </li>
                 <li class="top-genre">
-                    <a href="" class="top-genre-link">
+                    <a href="/gyms?feature=整骨院併設" class="top-genre-link">
                         <img src="/images/top-genres/clinic.jpg" alt="" class="top-genre__img">
                         <div class="top-genre__name"><span>整骨院併設</span></div>
                         <div class="top-genre__store-count"><span>{{$feature_establish_clinic}}件</span></div>
@@ -99,13 +99,13 @@
                 </li>
             </ul>
             <ul class="genre-list clearfix">
-                <li class="all-genre"><a href="" class="genre-link"><span>トータルフィットネス</span></a></li>
-                <li class="all-genre"><a href="" class="genre-link"><span>24h営業</span></a></li>
-                <li class="all-genre"><a href="" class="genre-link"><span>スタジオ併設</span></a></li>
-                <li class="all-genre"><a href="" class="genre-link"><span>プライベートジム</span></a></li>
-                <li class="all-genre"><a href="" class="genre-link"><span>整骨院併設</span></a></li>
-                <li class="all-genre"><a href="" class="genre-link"><span>テニス施設併設</span></a></li>
-                <li class="all-genre"><a href="" class="genre-link"><span>ゴルフ施設併設</span></a></li>
+                <li class="all-genre"><a href="/gyms?feature=トータルフィットネス" class="genre-link"><span>トータルフィットネス</span></a></li>
+                <li class="all-genre"><a href="/gyms?feature=24時間営業" class="genre-link"><span>24時間営業</span></a></li>
+                <li class="all-genre"><a href="/gyms?feature=スタジオ併設" class="genre-link"><span>スタジオ併設</span></a></li>
+                <li class="all-genre"><a href="/gyms?feature=プライベートジム" class="genre-link"><span>プライベートジム</span></a></li>
+                <li class="all-genre"><a href="/gyms?feature=整骨院併設" class="genre-link"><span>整骨院併設</span></a></li>
+                <li class="all-genre"><a href="/gyms?feature=テニス施設併設" class="genre-link"><span>テニス施設併設</span></a></li>
+                <li class="all-genre"><a href="/gyms?feature=ゴルフ施設併設" class="genre-link"><span>ゴルフ施設併設</span></a></li>
 
             </ul>
         </div>
@@ -134,7 +134,7 @@
             <ul class="brand-list clearfix">
                 <li class="all-brand"><a href="/gyms?name=RIZAP" class="brand-link"><span>RIZAP</span></a></li>
                 <li class="all-brand"><a href="/gyms?name=コナミスポーツ" class="brand-link"><span>コナミスポーツ</span></a></li>
-                <li class="all-brand"><a href="/gyms?name=セントラルスポーツ" class="brand-link"><span>セントラルスポーツ</span></a></li>
+                <li class="all-brand"><a href="/gyms?name=セントラル" class="brand-link"><span>セントラルスポーツ</span></a></li>
                 <li class="all-brand"><a href="/gyms?name=ルネサンス" class="brand-link"><span>ルネサンス</span></a></li>
                 <li class="all-brand"><a href="/gyms?name=ティップネス" class="brand-link"><span>ティップネス</span></a></li>
                 <li class="all-brand"><a href="/gyms?name=カーブス" class="brand-link"><span>カーブス</span></a></li>

@@ -1,7 +1,7 @@
 <div class="searched_heading-box">
     <div class="searched_heading-box__result">
         <span class="searched_heading-box__result__keyword">すべてのジム</span>
-        <span class="searched_heading-box__result__count">10件</span>
+        <span class="searched_heading-box__result__count">{{$search_count}}件</span>
     </div>
     <div class="searched_heading-box__sort">
         <select name="sort_order" class="sort-order searched_heading-box__sort__select">
