@@ -3,7 +3,7 @@
 パンくずリスト
 @include('gyms.searched_heading')
 <div class="shop-paginate">    
-    {{$items->links()}}
+    {{$items->appends(request()->input())->links()}}
 </div>
 <div class="shop-list">
     @foreach($items as $item)
@@ -52,7 +52,7 @@
     </div>
     @endforeach
     <div class="shop-paginate">    
-        {{$items->links()}}
+        {{$items->appends(request()->input())->links()}}
     </div>
 </div>
 @endsection

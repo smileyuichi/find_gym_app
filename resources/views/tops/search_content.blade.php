@@ -116,35 +116,35 @@
         <div class="search-brand__area">
             <ul class="top-brands">
                 <li class="top-brand">
-                    <a href="" class="top-brand-link"><img src="/images/brands/rizap.png" alt="" class="top-brand__img"></a>
+                    <a href="/gyms?name=RIZAP" class="top-brand-link"><img src="/images/brands/rizap.png" alt="" class="top-brand__img"></a>
                 </li>
                 <li class="top-brand">
-                    <a href="" class="top-brand-link"><img src="/images/brands/konami.png" alt="" class="top-brand__img"></a>
+                    <a href="/gyms?name=コナミスポーツ" class="top-brand-link"><img src="/images/brands/konami.png" alt="" class="top-brand__img"></a>
                 </li>
                 <li class="top-brand">
-                    <a href="" class="top-brand-link"><img src="/images/brands/central.jpg" alt="" class="top-brand__img"></a>
+                    <a href="/gyms?name=セントラル" class="top-brand-link"><img src="/images/brands/central.jpg" alt="" class="top-brand__img"></a>
                 </li>
                 <li class="top-brand">
-                    <a href="" class="top-brand-link"><img src="/images/brands/renaissance.jpg" alt="" class="top-brand__img"></a>
+                    <a href="/gyms?name=ルネサンス" class="top-brand-link"><img src="/images/brands/renaissance.jpg" alt="" class="top-brand__img"></a>
                 </li>
                 <li class="top-brand">
-                    <a href="" class="top-brand-link"><img src="/images/brands/tipness.jpg" alt="" class="top-brand__img"></a>
+                    <a href="/gyms?name=ティップネス" class="top-brand-link"><img src="/images/brands/tipness.jpg" alt="" class="top-brand__img"></a>
                 </li>
             </ul>
             <ul class="brand-list clearfix">
-                <li class="all-brand"><a href="" class="brand-link"><span>RIZAP</span></a></li>
-                <li class="all-brand"><a href="" class="brand-link"><span>コナミスポーツ</span></a></li>
-                <li class="all-brand"><a href="" class="brand-link"><span>セントラルスポーツ</span></a></li>
-                <li class="all-brand"><a href="" class="brand-link"><span>ルネサンス</span></a></li>
-                <li class="all-brand"><a href="" class="brand-link"><span>ティップネス</span></a></li>
-                <li class="all-brand"><a href="" class="brand-link"><span>カーブス</span></a></li>
-                <li class="all-brand"><a href="" class="brand-link"><span>ホリデイ</span></a></li>
-                <li class="all-brand"><a href="" class="brand-link"><span>東急オアシス</span></a></li>
-                <li class="all-brand"><a href="" class="brand-link"><span>NASスポーツ</span></a></li>
-                <li class="all-brand"><a href="" class="brand-link"><span>アクトス</span></a></li>
-                <li class="all-brand"><a href="" class="brand-link"><span>エニタイムフィットネス</span></a></li>
-                <li class="all-brand"><a href="" class="brand-link"><span>GOLDGYM</span></a></li>
-                <li class="all-brand"><a href="" class="brand-link"><span>ジョイフィット</span></a></li>
+                <li class="all-brand"><a href="/gyms?name=RIZAP" class="brand-link"><span>RIZAP</span></a></li>
+                <li class="all-brand"><a href="/gyms?name=コナミスポーツ" class="brand-link"><span>コナミスポーツ</span></a></li>
+                <li class="all-brand"><a href="/gyms?name=セントラルスポーツ" class="brand-link"><span>セントラルスポーツ</span></a></li>
+                <li class="all-brand"><a href="/gyms?name=ルネサンス" class="brand-link"><span>ルネサンス</span></a></li>
+                <li class="all-brand"><a href="/gyms?name=ティップネス" class="brand-link"><span>ティップネス</span></a></li>
+                <li class="all-brand"><a href="/gyms?name=カーブス" class="brand-link"><span>カーブス</span></a></li>
+                <li class="all-brand"><a href="/gyms?name=ホリデイ" class="brand-link"><span>ホリデイ</span></a></li>
+                <li class="all-brand"><a href="/gyms?name=東急オアシス" class="brand-link"><span>東急オアシス</span></a></li>
+                <li class="all-brand"><a href="/gyms?name=NASスポーツ" class="brand-link"><span>NASスポーツ</span></a></li>
+                <li class="all-brand"><a href="/gyms?name=アクトス" class="brand-link"><span>アクトス</span></a></li>
+                <li class="all-brand"><a href="/gyms?name=エニタイム" class="brand-link"><span>エニタイムフィットネス</span></a></li>
+                <li class="all-brand"><a href="/gyms?name=GOLDGYM" class="brand-link"><span>GOLDGYM</span></a></li>
+                <li class="all-brand"><a href="/gyms?name=ジョイフィット" class="brand-link"><span>ジョイフィット</span></a></li>
             </ul>
         </div>
         <div class="search-brand__all"></div>
