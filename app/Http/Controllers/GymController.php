@@ -32,10 +32,10 @@ class GymController extends Controller
             $search_count = DB::table('gyms')->where('address','like','%'. $param['address'] . '%')->count();
         }else
         {
-            var_dump('miss');
             $items = DB::table('gyms')->paginate(5);
             $search_count = DB::table('gyms')->count();
         }
+        
         $val = [
             'items' => $items,
             'search_count' => $search_count,
