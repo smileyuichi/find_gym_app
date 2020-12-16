@@ -6,6 +6,13 @@
     {{$items->appends(request()->input())->links()}}
 </div>
 <div class="shop-list">
+    {{-- 検索結果0の場合の処理 --}}
+    @if ($search_count==0)
+    <div class="no-result">
+        <span>検索に該当する店舗は登録されていません。</span>
+    </div>
+    @endif
+    {{-- 検索結果0の場合の処理ここまで --}}
     @foreach($items as $item)
     <div class="shop">
         <a href="/gyms/{{$item->id}}">
