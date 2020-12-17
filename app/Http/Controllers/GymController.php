@@ -50,7 +50,20 @@ class GymController extends Controller
 
     public function show($id)
     {
-            return view('gyms.show',['gym' => Gym::findOrFail($id)]);
+        $test=3.9;
+        // ジムの特徴を列挙する
+        $features = DB::table('gyms')->join('feature_gym','gyms.id','=','feature_gym.gym_id')->join('features','features.id','=','feature_gym.feature_id')->where('gyms.id','=',$id)->select('gyms.name','features.name as feature_name')->get();
+        // ジムのエリアを表示する
+        $area = DB::table('gyms')->join('areas','gyms.area_id','=','areas.id')->where('gyms.id','=',$id)->select('gyms.name','areas.name as area_name')->first();
+
+        $val=[
+            'gym' => Gym::findOrFail($id),
+            'test' => $test,
+            'features' => $features,
+            'area' => $area,
+        ];
+
+        return view('gyms.show',$val);
     }
 
 

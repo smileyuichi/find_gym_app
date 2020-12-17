@@ -24,7 +24,7 @@
                         <img src="" alt="">
                         <input type="hidden" name="score" value="4" readonly>
                     </div>
-                    <div class="shop-rating">4.0</div>
+                    <div class="shop-rating">{{$test}}</div>
                 </div>
                 <div class="shop-top-info__woms">
                     <a href="/gyms/{{$gym->id}}/woms">
@@ -37,12 +37,14 @@
             </div>
             <div class="shop-bottom-info">
                 <span>エリア：</span>
-                <a href="" class="shop-bottom-info-show">大阪府内</a>
+                <a href="/gyms/?address={{$area->area_name}}" class="shop-bottom-info-show">{{$area->area_name}}</a>
                 <span>ジャンル：</span>
                 <div class="shop-genre">
                     <ul class="genre-list">
                         <li>
-                            <a href="" class="shop-bottom-info-show">大手フィットネスジム</a>
+                            @foreach ($features as $feature)
+                            <a href="/gyms/?feature={{$feature->feature_name}}" class="shop-bottom-info-show">{{$feature->feature_name}}</a>
+                            @endforeach
                         </li>
                     </ul>
                 </div>
@@ -84,11 +86,6 @@
             <li class="shop-menu" id="selected-menu">
                 <a href="/gyms/{{$gym->id}}" class="shop-menu-link">
                     <span class="shop-menu-name">店舗トップ</span>
-                </a>
-            </li>
-            <li class="shop-menu">
-                <a href="/gyms/{{$gym->id}}/items" class="shop-menu-link">
-                    <span class="shop-menu-name">取扱商品</span>
                 </a>
             </li>
             <li class="shop-menu">

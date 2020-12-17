@@ -124,7 +124,7 @@
             display: -webkit-box;
             -webkit-box-orient: vertical;
             -webkit-line-clamp: 2;
-            height: 32px;
+            height: 40px;
             overflow: hidden;
           }
           &__rating {
@@ -316,7 +316,7 @@
         border-bottom: $border_style_inner;
         border-right: $border_style_inner;
         .shop-menu {
-          width: 25%;
+          width: calc(100%/3);
           height: 48px;
           border-left: $border_style_inner;
           cursor: pointer;

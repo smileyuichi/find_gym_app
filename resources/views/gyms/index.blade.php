@@ -28,6 +28,14 @@
                         @endforeach 
                     </div>
                 </div>
+                <div class="top-info__action">
+                    <div class="action-icon action-icon-left">
+                        <i class="fas fa-user-check fa-lg user-count-0"></i>
+                    </div>
+                    <div class="action-icon">
+                        <div class="fas fa-bookmark fa-lg clip-count-0"></div>
+                    </div>
+                </div>
             </div>
             <div class="bottom-info">
                 <div class="bottom-info-left">
