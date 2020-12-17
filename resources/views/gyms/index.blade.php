@@ -19,7 +19,14 @@
             <div class="top-info">
                 <div class="top-info__name_and_area">
                     <div class="top-info__name_and_area__name">{{$item->name}}</div>
-                    <div class="top-info__name_and_area__area">大阪府 / フィットネスクラブ</div>
+                    <div class="top-info__name_and_area__area">{{$item->area_name}} / 
+                        {{-- ジムの特徴を列挙して表示 --}}
+                        @foreach($features as $feature)
+                        @if ($feature->id == $item->id)
+                            {{$feature->feature_name}}
+                        @endif
+                        @endforeach 
+                    </div>
                 </div>
             </div>
             <div class="bottom-info">
