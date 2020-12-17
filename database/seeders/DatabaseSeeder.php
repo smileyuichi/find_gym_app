@@ -16,6 +16,6 @@ class DatabaseSeeder extends Seeder
         $this->call(GymTableSeeder::class);
         $this->call(FeatureTableSeeder::class);
         $this->call(FeatureGymTableSeeder::class);
-        // \App\Models\User::factory(10)->create();
+        $this->call(AreaTableSeeder::class);
     }
 }

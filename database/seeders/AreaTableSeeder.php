@@ -6,12 +6,12 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Flynsarmy\CsvSeeder\CsvSeeder;
 
-class GymsCsvSeeder extends CsvSeeder {
+class AreasCsvSeeder extends CsvSeeder {
 
 	public function __construct()
 	{
-		$this->table = 'gyms';
-		$this->filename = base_path().'/database/seedsTest/csvs/gyms_csv.csv';
+		$this->table = 'areas';
+		$this->filename = base_path().'/database/seedsTest/csvs/areas_csv.csv';
 	}
 
 	public function run()
@@ -27,7 +27,7 @@ class GymsCsvSeeder extends CsvSeeder {
 }
 
 
-class GymTableSeeder extends Seeder
+class AreaTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -36,6 +36,6 @@ class GymTableSeeder extends Seeder
 
     public function run()
     {
-        $this->call(GymsCsvSeeder::class);
+        $this->call(AreasCsvSeeder::class);
     }
 }
